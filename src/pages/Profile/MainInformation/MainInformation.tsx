@@ -42,7 +42,7 @@ function MainInformation() {
         localStorage.setItem("theme", next);
     };
 
-    const logoutHandler = async (event: MouseEvent<HTMLButtonElement>) => {
+    const logoutHandler = async (event: MouseEvent) => {
         event.preventDefault();
         await dispatch(logoutRequest());
         navigate("/login");

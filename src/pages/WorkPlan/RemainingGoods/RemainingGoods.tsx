@@ -6,10 +6,10 @@ import {
     GoodsItem,
     GoodsText,
     GoodsWrapper,
-    MainContainer, NumberWrapper,
+    MainContainer,
+    NumberWrapper,
     StyledDecrement,
     StyledIncrement,
-    StyledNumberController,
     StyledSearch,
 } from "@/pages/WorkPlan/RemainingGoods/Styled";
 import { useNavigate } from "react-router-dom";
