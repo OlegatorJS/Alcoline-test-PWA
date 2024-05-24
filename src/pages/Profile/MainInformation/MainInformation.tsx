@@ -42,8 +42,7 @@ function MainInformation() {
         localStorage.setItem("theme", next);
     };
 
-    const logoutHandler = async (event: MouseEvent) => {
-        event.preventDefault();
+    const logoutHandler = async () => {
         await dispatch(logoutRequest());
         navigate("/login");
     };

@@ -30,8 +30,7 @@ function AuthForm() {
         console.log("Failed:", errorInfo);
     };
 
-    const loginHandler = async (event: MouseEvent) => {
-        event.preventDefault();
+    const loginHandler = async () => {
         form.validateFields().then(async (values) => {
             await dispatch(login(values));
             navigate("/dashboard");
