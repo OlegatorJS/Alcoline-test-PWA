@@ -28,7 +28,7 @@ import {
 } from "antd";
 import dollarIcon from "../../assets/images/dollar.png";
 import { EnvironmentFilled, PaperClipOutlined } from "@ant-design/icons";
-import React, { useState } from "react";
+import React, { SyntheticEvent, useState } from "react";
 import { useAppDispatch, useAppSelector } from "@/hooks/redux";
 import { setWorkStatus } from "@/store/slices/UserSlice";
 
@@ -52,6 +52,13 @@ function WorkPlan() {
         setIsModalOpened(false);
     };
 
+    const handleOpenPoint = (e: SyntheticEvent) => {
+        e.preventDefault();
+        window.open(
+            "https://www.google.com/maps/place/45%C2%B041'13.0%22N+28%C2%B037'17.1%22E/@45.6869353,28.6214161,17z/data=!3m1!4b1!4m4!3m3!8m2!3d45.6869353!4d28.6214161?entry=ttu",
+        );
+    };
+
     const items: CollapseProps["items"] = [
         {
             key: "1",
@@ -67,6 +74,7 @@ function WorkPlan() {
                             height: "20px",
                             fontSize: "20px",
                         }}
+                        onClick={handleOpenPoint}
                     />
                 </FlexContainer>
             ),
@@ -146,6 +154,7 @@ function WorkPlan() {
                             height: "20px",
                             fontSize: "20px",
                         }}
+                        onClick={handleOpenPoint}
                     />
                 </FlexContainer>
             ),
@@ -203,6 +212,7 @@ function WorkPlan() {
                             height: "20px",
                             fontSize: "20px",
                         }}
+                        onClick={handleOpenPoint}
                     />
                 </FlexContainer>
             ),
