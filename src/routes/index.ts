@@ -4,12 +4,6 @@ import { Pages, Routes } from "./types";
 import ProductCard from "@/pages/WorkPlan/ProductCard";
 
 const routes: Routes = {
-    [Pages.Main]: {
-        component: asyncComponentLoader(() => import("@/pages/Main/Main")),
-        path: "/",
-        title: "Main",
-        isPrivate: true,
-    },
     [Pages.Login]: {
         component: asyncComponentLoader(
             () => import("@/pages/Authorization/Login/Login"),
@@ -73,7 +67,7 @@ const routes: Routes = {
         component: asyncComponentLoader(
             () => import("@/pages/Dashboard/Dashboard"),
         ),
-        path: "/dashboard",
+        path: "/",
         title: "Dashboard",
         isPrivate: true,
     },

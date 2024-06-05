@@ -80,7 +80,48 @@ function Dashboard() {
         {
             key: "2",
             label: "Персональний план",
-            children: <div>Продукт 2</div>,
+            children: (
+                <CollapseWrapper>
+                    <CollapseItem>
+                        <UserInfoTitle>Продукт 1</UserInfoTitle>
+                        <FlexContainer gap="8px">
+                            <FlexContainer flexDirection="column">
+                                <StyledScore increase>25</StyledScore>
+                                <Typography style={{ fontSize: "12px" }}>
+                                    100
+                                </Typography>
+                            </FlexContainer>
+                            <ArrowUpOutlined style={{ color: "#52C41A" }} />
+                        </FlexContainer>
+                    </CollapseItem>
+                    <StyledDivider />
+                    <CollapseItem>
+                        <UserInfoTitle>Продукт 2</UserInfoTitle>
+                        <FlexContainer gap="8px">
+                            <FlexContainer flexDirection="column">
+                                <StyledScore increase>120</StyledScore>
+                                <Typography style={{ fontSize: "12px" }}>
+                                    100
+                                </Typography>
+                            </FlexContainer>
+                            <ArrowUpOutlined style={{ color: "#52C41A" }} />
+                        </FlexContainer>
+                    </CollapseItem>
+                    <StyledDivider />
+                    <CollapseItem>
+                        <UserInfoTitle>Продукт 3</UserInfoTitle>
+                        <FlexContainer gap="8px">
+                            <FlexContainer flexDirection="column">
+                                <StyledScore increase>112</StyledScore>
+                                <Typography style={{ fontSize: "12px" }}>
+                                    100
+                                </Typography>
+                            </FlexContainer>
+                            <ArrowUpOutlined style={{ color: "#52C41A" }} />
+                        </FlexContainer>
+                    </CollapseItem>
+                </CollapseWrapper>
+            ),
         },
     ];
 

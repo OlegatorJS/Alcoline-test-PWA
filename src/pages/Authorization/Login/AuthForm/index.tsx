@@ -33,7 +33,7 @@ function AuthForm() {
     const loginHandler = async () => {
         form.validateFields().then(async (values) => {
             await dispatch(login(values));
-            navigate("/dashboard");
+            navigate("/");
         });
     };
 

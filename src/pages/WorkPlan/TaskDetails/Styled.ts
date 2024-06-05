@@ -3,7 +3,7 @@ import { Button, Card, Divider, Layout, Typography } from "antd";
 import FlexContainer from "@/shared/elements/FlexContainer";
 
 export const MainContainer = styled(Layout)`
-    height: calc(100dvh - 124px);
+    height: calc(100dvh - 60px);
     width: 100%;
     padding: 16px;
 `;

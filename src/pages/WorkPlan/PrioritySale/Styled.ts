@@ -4,9 +4,10 @@ import FlexContainer from "@/shared/elements/FlexContainer";
 import Search from "antd/es/input/Search";
 
 export const MainContainer = styled(Layout)`
-    height: calc(100dvh - 124px);
+    height: calc(100dvh - 60px);
     width: 100%;
     padding: 16px 16px 0 16px;
+    overflow-y: auto;
 `;
 
 export const GoodsText = styled(Typography)`

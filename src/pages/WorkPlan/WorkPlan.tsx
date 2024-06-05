@@ -97,44 +97,41 @@ function WorkPlan() {
                         </Button>
                     </CollapseButtonWrapper>
                     <CollapseItem>
-                        <FlexContainer
-                            gap="12px"
-                            onClick={() => navigate("duty/12345")}
-                        >
+                        <FlexContainer gap="12px">
                             <Checkbox />
-                            <Typography>Борг</Typography>
-                        </FlexContainer>
-                        <FlexContainer
-                            gap="12px"
-                            onClick={() => navigate("task/12345")}
-                        >
-                            <Checkbox />
-                            <Typography>Перевірити кількість</Typography>
-                        </FlexContainer>
-                        <FlexContainer
-                            gap="12px"
-                            onClick={() => navigate("remaining/12345")}
-                        >
-                            <Checkbox />
-                            <Typography>Залишки товарів</Typography>
-                        </FlexContainer>
-                        <FlexContainer
-                            gap="12px"
-                            onClick={() => navigate("priority-sale/12345")}
-                        >
-                            <Checkbox />
-                            <Typography>Пріорітетний продаж</Typography>
-                        </FlexContainer>
-                        <FlexContainer
-                            gap="12px"
-                            onClick={() => navigate("upsells/12345")}
-                        >
-                            <Checkbox />
-                            <Typography>Додатковий продаж</Typography>
+                            <Typography onClick={() => navigate("duty/12345")}>
+                                Борг
+                            </Typography>
                         </FlexContainer>
                         <FlexContainer gap="12px">
                             <Checkbox />
-                            <Typography>Перевірити кількість</Typography>
+                            <Typography onClick={() => navigate("task/12345")}>
+                                Перевірити кількість
+                            </Typography>
+                        </FlexContainer>
+                        <FlexContainer gap="12px">
+                            <Checkbox />
+                            <Typography
+                                onClick={() => navigate("remaining/12345")}
+                            >
+                                Залишки товарів
+                            </Typography>
+                        </FlexContainer>
+                        <FlexContainer gap="12px">
+                            <Checkbox />
+                            <Typography
+                                onClick={() => navigate("priority-sale/12345")}
+                            >
+                                Пріорітетний продаж
+                            </Typography>
+                        </FlexContainer>
+                        <FlexContainer gap="12px">
+                            <Checkbox />
+                            <Typography
+                                onClick={() => navigate("upsells/12345")}
+                            >
+                                Додатковий продаж
+                            </Typography>
                         </FlexContainer>
                     </CollapseItem>
                 </CollapseWrapper>

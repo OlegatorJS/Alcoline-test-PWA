@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Card, Layout, Typography } from "antd";
 
 export const MainContainer = styled(Layout)`
-    height: calc(100dvh - 124px);
+    height: calc(100dvh - 60px);
     width: 100%;
     padding: 16px;
     overflow-y: auto;

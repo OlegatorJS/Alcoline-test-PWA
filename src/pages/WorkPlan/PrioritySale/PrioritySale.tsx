@@ -9,7 +9,7 @@ import {
     StyledTypography,
 } from "@/pages/WorkPlan/PrioritySale/Styled";
 import Header from "@/components/Header";
-import { Button, InputNumber } from "antd";
+import { Button, InputNumber, Typography } from "antd";
 import FlexContainer from "@/shared/elements/FlexContainer";
 
 const PrioritySale = () => {
@@ -19,6 +19,14 @@ const PrioritySale = () => {
             <Header title="Пріорітетний продаж" path="/work-plan" />
             <MainContainer>
                 <GoodsWrapper>
+                    <FlexContainer justifyContent="flex-end" gap="24px">
+                        <Typography style={{ fontSize: "16px" }}>
+                            Form 1
+                        </Typography>
+                        <Typography style={{ fontSize: "16px" }}>
+                            Form 2
+                        </Typography>
+                    </FlexContainer>
                     <GoodsItem>
                         <FlexContainer justifyContent="space-between">
                             <StyledTitle>

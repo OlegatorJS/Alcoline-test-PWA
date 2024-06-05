@@ -1,4 +1,10 @@
-import { Route, Routes, Navigate } from "react-router-dom";
+import {
+    Route,
+    Routes,
+    Navigate,
+    useNavigate,
+    useLocation,
+} from "react-router-dom";
 import routes from "..";
 import { useAppSelector } from "@/hooks/redux";
 import Footer from "@/components/Footer";
@@ -9,6 +15,8 @@ const PrivateWrapper = ({ children }: { children: JSX.Element }) => {
 };
 
 function Pages() {
+    const location = useLocation();
+    const wrappingLength = location.pathname.split("/");
     return (
         <Routes>
             {Object.values(routes).map(
@@ -21,7 +29,9 @@ function Pages() {
                                 <PrivateWrapper>
                                     <>
                                         <Component />
-                                        <Footer />
+                                        {wrappingLength?.length < 3 ? (
+                                            <Footer />
+                                        ) : null}
                                     </>
                                 </PrivateWrapper>
                             }

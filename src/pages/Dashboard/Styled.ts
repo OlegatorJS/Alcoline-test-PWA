@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 export const MainContainer = styled(Layout)`
     height: calc(100dvh - 124px);
+    overflow-y: auto;
     width: 100%;
     padding: 16px;
 `;

@@ -20,7 +20,7 @@ const Footer = () => {
             <FlexContainer height="100%" justifyContent="space-between">
                 <FlexContainer flexDirection="column">
                     <PieChartFilled
-                        onClick={() => navigate("/dashboard")}
+                        onClick={() => navigate("/")}
                         style={{
                             width: "22px",
                             height: "22px",
