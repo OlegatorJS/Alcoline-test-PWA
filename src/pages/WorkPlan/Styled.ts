@@ -6,6 +6,7 @@ export const MainContainer = styled(Layout)`
     height: calc(100dvh - 124px);
     width: 100%;
     padding: 16px;
+    overflow-y: auto;
 `;
 
 export const StyledCollapse = styled(Collapse)`
