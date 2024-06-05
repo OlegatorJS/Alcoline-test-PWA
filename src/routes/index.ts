@@ -1,7 +1,6 @@
 import asyncComponentLoader from "@/utils/loader";
 
 import { Pages, Routes } from "./types";
-import ProductCard from "@/pages/WorkPlan/ProductCard";
 
 const routes: Routes = {
     [Pages.Login]: {

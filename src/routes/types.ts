@@ -3,7 +3,6 @@ import { PathRouteProps } from "react-router-dom";
 import ProductCard from "@/pages/WorkPlan/ProductCard";
 
 enum Pages {
-    Main,
     Login,
     PasswordRecovery,
     NewPassword,
